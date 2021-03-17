@@ -5,8 +5,8 @@ import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta, cta2 } = hero;
+  const { hero3 } = useContext(PortfolioContext);
+  const { title, name, subtitle, cta, cta2 } = hero3;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
   }, []);
 
   return (
-    <section id="hero" className="jumbotron">
+    <section id="hero3" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
@@ -35,12 +35,12 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
             <span className="cta-btn cta-btn--hero">
-              <Link to="hero2" smooth duration={1000}>
+              <Link to="hero4" smooth duration={1000}>
                 {cta || 'Know more'}
               </Link>
             </span>
             <span className="cta-btn cta-btn--hero">
-              <Link to="hero2" smooth duration={1000}>
+              <Link to="about" smooth duration={1000}>
                 {cta2 || 'Know more'}
               </Link>
             </span>
