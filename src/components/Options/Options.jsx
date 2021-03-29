@@ -1,13 +1,16 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
+// import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+// import { Link } from 'react-scroll';
 // import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 // import ProjectImg from '../Image/ProjectImg';
 
-const Projects = () => {
+const Header = () => {
   const { projects } = useContext(PortfolioContext);
+  // const { tistle, name, subtitle, cta, cta2 } = options;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -117,4 +120,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Header;

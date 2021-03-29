@@ -60,6 +60,15 @@ export const notSurvivor1Data = {
   cta2: 'Learn more information',
 };
 
+// OPTIONS DATA
+export const optionsData = {
+  title: 'If the assault has happened in 72 hours',
+  name: 'sexual assault survivor',
+  subtitle: 'or would you like to learn more about the post-assault process?',
+  cta: 'Help a survivor',
+  cta2: 'Learn more information',
+};
+
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
@@ -86,8 +95,8 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
+    title: 'LAC-DHS in partnership with USC',
+    info: '(Eastern Los Angeles)',
     info2: '',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
@@ -95,8 +104,35 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
+    title: 'Long Beach Community Hospital',
+    info: '(Long Beach)',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'San Gabriel Valley Hospital',
+    info: '(San Gabriel)',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Presbyterian Community Hospital',
+    info: '(Whittier)',
+    info2: '',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Little Company of Mary',
+    info: '(Torrance)',
     info2: '',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
