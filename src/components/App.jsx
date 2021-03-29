@@ -5,6 +5,7 @@ import Hero3 from './Hero3/Hero3';
 import Hero4 from './Hero4/Hero4';
 import Hero5 from './Hero5/Hero5';
 import About from './About/About';
+import NotSurvivor1 from './NotSurvivor1/NotSurvivor1';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
@@ -18,6 +19,7 @@ import {
   hero4Data,
   hero5Data,
   aboutData,
+  notSurvivor1Data,
   projectsData,
   contactData,
   footerData,
@@ -30,6 +32,7 @@ function App() {
   const [hero4, setHero4] = useState({});
   const [hero5, setHero5] = useState({});
   const [about, setAbout] = useState({});
+  const [notSurvivor1, setNotSurvivor1] = useState({});
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
@@ -41,6 +44,7 @@ function App() {
     setHero4({ ...hero4Data });
     setHero5({ ...hero5Data });
     setAbout({ ...aboutData });
+    setNotSurvivor1({ ...notSurvivor1Data });
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
@@ -48,7 +52,7 @@ function App() {
 
   return (
     <PortfolioProvider
-      value={{ hero, hero2, hero3, hero4, hero5, about, projects, contact, footer }}
+      value={{ hero, hero2, hero3, hero4, hero5, about, notSurvivor1, projects, contact, footer }}
     >
       <Hero />
       <Hero2 />
@@ -57,6 +61,7 @@ function App() {
       <Hero5 />
       <Projects />
       <About />
+      <NotSurvivor1 />
       <Contact />
       <Footer />
     </PortfolioProvider>

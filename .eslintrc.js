@@ -6,6 +6,7 @@ module.exports = {
     es6: true,
   },
   rules: {
+    'jsx-a11y/anchor-is-valid': 'off',
     'import/no-extraneous-dependencies': 'off',
     'prettier/prettier': 'error',
     'no-console': 'warn',

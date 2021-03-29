@@ -4,15 +4,9 @@ import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
-// function handleClick(e) {
-//   e.preventDefault();
-//   console.log('The link was clicked.');
-//   alert("More info");
-// }
-
 const Header = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta, cta2 } = hero;
+  const { notSurvivor1 } = useContext(PortfolioContext);
+  const { title, name, subtitle, cta, cta2 } = notSurvivor1;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -28,32 +22,25 @@ const Header = () => {
   }, []);
 
   return (
-    <section id="hero" className="jumbotron">
+    <section id="notSurvivor1" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="hero-title">
+          <h1 className="notSurvivor1-title">
             {title || 'I am your'}{' '}
             <span className="text-color-main">{name || 'online advocate'}</span>
             <br />
             {subtitle || 'hi'}
-            {/* <a href="#" onClick={handleClick}>
-              Click me
-            </a> */}
           </h1>
-          {/* <div className="App">
-            <a className="read-more-link" onClick={()=>{setReadMore(!readMore)}}><h2>{linkName}</h2></a>
-            {readMore && extraContent}
-          </div> */}
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <p className="hero-cta">
+          <p className="notSurvivor1-cta">
             <span className="cta-btn cta-btn--hero">
-              <Link to="hero2" smooth duration={1000}>
+              <Link to="hero3" smooth duration={1000}>
                 {cta || 'Know more'}
               </Link>
             </span>
             <span className="cta-btn cta-btn--hero">
-              <Link to="notSurvivor1" smooth duration={1000}>
+              <Link to="about" smooth duration={1000}>
                 {cta2 || 'Know more'}
               </Link>
             </span>

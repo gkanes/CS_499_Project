@@ -51,6 +51,15 @@ export const hero5Data = {
   cta2: 'No',
 };
 
+// NOTSURVIVOR1 DATA
+export const notSurvivor1Data = {
+  title: 'Would you like to help someone who is a',
+  name: 'sexual assault survivor',
+  subtitle: 'or would you like to learn more about the post-assault process?',
+  cta: 'Help a survivor',
+  cta2: 'Learn more information',
+};
+
 // ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
