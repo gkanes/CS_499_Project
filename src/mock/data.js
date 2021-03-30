@@ -84,6 +84,15 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
+    title: 'If you would like to speak to an RSVP advocate to help you through the process',
+    info: 'Please login to your MySHR portal and book an advocate appointment through ',
+    info2: 'Want to speak to someone now? Call (213) 740-9355 (WELL)',
+    url: '',
+    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
     title: 'Santa Monica Rape Treatment Center',
     info:
       'Free sensitive medical treatment, preventive health care and counseling available 24/7.  ',

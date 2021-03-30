@@ -25,7 +25,7 @@ const Header = () => {
     <section id="notSurvivor1" className="jumbotron">
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="notSurvivor1-title">
+          <h1 className="hero-title">
             {title || 'I am your'}{' '}
             <span className="text-color-main">{name || 'online advocate'}</span>
             <br />
@@ -34,12 +34,12 @@ const Header = () => {
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">
-            <span className="cta-btn .cta-btn--hero">
+            <span className="cta-btn cta-btn--hero">
               <Link to="options" smooth duration={1000}>
                 {cta || 'Know more'}
               </Link>
             </span>
-            <span className="cta-btn .cta-btn--hero">
+            <span className="cta-btn cta-btn--hero">
               <Link to="about" smooth duration={1000}>
                 {cta2 || 'Know more'}
               </Link>
