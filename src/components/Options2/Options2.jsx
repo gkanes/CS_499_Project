@@ -4,8 +4,8 @@ import { Container } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
-const Projects = () => {
-  const { projects } = useContext(PortfolioContext);
+const Options2 = () => {
+  const { options2 } = useContext(PortfolioContext);
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -21,12 +21,12 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects">
+    <section id="options2">
       <Container>
-        <div className="project-wrapper">
+        <div className="options2-wrapper">
           <Title title="Rape Kit Resources" />
-          {projects.map((project) => {
-            const { title, info, info2, url } = project;
+          {options2.map((option2) => {
+            const { title, info, info2, url } = option2;
 
             return (
               <Fade
@@ -64,4 +64,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Options2;

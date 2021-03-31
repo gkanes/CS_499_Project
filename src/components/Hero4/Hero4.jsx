@@ -39,7 +39,7 @@ const Header = () => {
               </Link>
             </span>
             <span className="cta-btn cta-btn--hero">
-              <Link to="about" smooth duration={1000}>
+              <Link to="options2" smooth duration={1000}>
                 {cta2 || 'Know more'}
               </Link>
             </span>

@@ -7,6 +7,7 @@ import Hero5 from './Hero5/Hero5';
 import About from './About/About';
 import NotSurvivor1 from './NotSurvivor1/NotSurvivor1';
 import Options from './Options/Options';
+import Options2 from './Options2/Options2';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
@@ -22,6 +23,7 @@ import {
   aboutData,
   notSurvivor1Data,
   optionsData,
+  options2Data,
   projectsData,
   contactData,
   footerData,
@@ -36,6 +38,7 @@ function App() {
   const [about, setAbout] = useState({});
   const [notSurvivor1, setNotSurvivor1] = useState({});
   const [options, setOptions] = useState({});
+  const [options2, setOptions2] = useState([]);
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
   const [footer, setFooter] = useState({});
@@ -49,6 +52,7 @@ function App() {
     setAbout({ ...aboutData });
     setNotSurvivor1({ ...notSurvivor1Data });
     setOptions({ ...optionsData });
+    setOptions2([...options2Data]);
     setProjects([...projectsData]);
     setContact({ ...contactData });
     setFooter({ ...footerData });
@@ -65,6 +69,7 @@ function App() {
         about,
         notSurvivor1,
         options,
+        options2,
         projects,
         contact,
         footer,
@@ -79,6 +84,7 @@ function App() {
       <About />
       <NotSurvivor1 />
       <Options />
+      <Options2 />
       <Contact />
       <Footer />
     </PortfolioProvider>
