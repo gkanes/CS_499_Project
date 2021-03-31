@@ -1,6 +1,9 @@
+/* eslint jsx-a11y/interactive-supports-focus: 0 */
+
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container } from 'react-bootstrap';
+import { BiInfoCircle } from 'react-icons/bi';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
@@ -9,6 +12,14 @@ const Projects = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [hover, setHover] = useState(false);
+  const onHover = () => {
+    setHover(true);
+  };
+
+  const onLeave = () => {
+    setHover(false);
+  };
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -25,6 +36,12 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Rape Kit Resources" />
+          <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
+            <BiInfoCircle />
+          </div>
+          {hover
+            ? 'An RSVP Advocate is a fully confidential individual who can walk you through your options.'
+            : ''}
           {projects.map((project) => {
             const { title, info, info2, url } = project;
 

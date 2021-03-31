@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+// import { BiInfoCircle } from 'react-icons/bi';
 
 // HEAD DATA
 export const headData = {
@@ -154,35 +155,45 @@ export const options2Data = [
     id: nanoid(),
     img: 'project.jpg',
     title: 'RSVP Advocate',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    info:
+      'An RSVP Advocate is a fully confidential individual who can walk you through your options.',
+    info2: true,
+    info3: 'Nothing! If you file a report and decide not to proceed later on that is fine.',
+
+    url: true,
+    repo: 'https://studenthealth.usc.edu/sexual-assault/', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
     title: 'Mental Health Resources',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    info:
+      "There are a variety of mental health resources available to you at USC. Visit Engemann's website below to find them.",
+    info2: true,
+    info3: 'Nothing! If you file a report and decide not to proceed later on that is fine.',
+
+    url: true,
+    repo: 'https://studenthealth.usc.edu/', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Filing a Report',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    title: 'Filing a Report with Title IX',
+    info:
+      'The newly-created Office for Equity, Equal Opportunity, and Title IX (EEO-TIX) combines resources to centralize the University’s reporting, investigation, and resolution procedures.\n\n',
+    info2: 'What happens when I file a report with Title IX?',
+    info3: 'Nothing! If you file a report and decide not to proceed later on that is fine.',
+    url: false,
+    repo: 'https://eeotix.usc.edu/', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
     title: 'Call the Police',
-    info: '',
-    info2: '',
+    info:
+      'If you would like to press charges in the future, one option is to file a report with LAPD.',
+    info2: 'What happens if I file a police report?',
+    info3: 'Nothing! If you file a report and decide not to proceed later on that is fine.',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },

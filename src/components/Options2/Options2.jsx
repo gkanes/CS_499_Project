@@ -1,8 +1,10 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container } from 'react-bootstrap';
+import { Container, Card, Accordion, Button } from 'react-bootstrap';
+
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
+// import { BiInfoCircle } from 'react-icons/bi';
 
 const Options2 = () => {
   const { options2 } = useContext(PortfolioContext);
@@ -24,9 +26,9 @@ const Options2 = () => {
     <section id="options2">
       <Container>
         <div className="options2-wrapper">
-          <Title title="Rape Kit Resources" />
+          <Title title="The Options" />
           {options2.map((option2) => {
-            const { title, info, info2, url } = option2;
+            const { title, info, info2, info3, url } = option2;
 
             return (
               <Fade
@@ -44,7 +46,29 @@ const Options2 = () => {
                       {info ||
                         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
                     </p>
-                    <p className="mb-4">{info2 || ''}</p>
+                    <p className="mb-4">
+                      {url || (
+                        <Accordion>
+                          <Card>
+                            <Card.Header>
+                              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                {info2}
+                              </Accordion.Toggle>
+                            </Card.Header>
+                            <Accordion.Collapse eventKey="0">
+                              <Card.Body>{info3}</Card.Body>
+                            </Accordion.Collapse>
+                          </Card>
+                        </Accordion>
+                      )}
+
+                      {/* <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button"> */}
+                      {/* {url || <BiInfoCircle />} */}
+                      {/* </div> */}
+                      {/* {hover
+                        ? 'An RSVP Advocate is a fully confidential individual who can walk you through your options.'
+                        : ''} */}
+                    </p>
                   </div>
                   <a
                     target="_blank"
