@@ -1,3 +1,4 @@
+/* eslint react/no-unescaped-entities: 0 */
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
@@ -36,14 +37,13 @@ const Header = () => {
             <span className="text-color-main">{name || 'online advocate'}</span>
             <br />
             {subtitle || 'hi'}
-            {/* <a href="#" onClick={handleClick}>
-              Click me
-            </a> */}
+            <div>
+              <p>
+                NOTE: This site is completely anonymous. We don't use cookies or store any of your
+                information.
+              </p>
+            </div>
           </h1>
-          {/* <div className="App">
-            <a className="read-more-link" onClick={()=>{setReadMore(!readMore)}}><h2>{linkName}</h2></a>
-            {readMore && extraContent}
-          </div> */}
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">

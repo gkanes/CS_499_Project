@@ -1,9 +1,11 @@
+/* eslint jsx-a11y/interactive-supports-focus: 0 */
 import React, { useContext, useState, useEffect } from 'react';
 // import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 // import { Link } from 'react-scroll';
 // import Tilt from 'react-tilt';
 import { Container } from 'react-bootstrap';
+import { BiInfoCircle } from 'react-icons/bi';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 // import ProjectImg from '../Image/ProjectImg';
@@ -14,6 +16,14 @@ const Header = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [hover, setHover] = useState(false);
+  const onHover = () => {
+    setHover(true);
+  };
+
+  const onLeave = () => {
+    setHover(false);
+  };
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -30,6 +40,14 @@ const Header = () => {
       <Container>
         <div className="options-wrapper">
           <Title title="Rape Kit Resources" />
+          <h1 className="options-wrapper__text-title">
+            <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
+              <BiInfoCircle />
+            </div>
+            {hover
+              ? 'An RSVP Advocate is a fully confidential individual who can walk you through your options.'
+              : ''}
+          </h1>
           {projects.map((project) => {
             const { title, info, info2, url } = project;
 

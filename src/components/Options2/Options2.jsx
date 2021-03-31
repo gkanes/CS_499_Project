@@ -1,3 +1,4 @@
+/* eslint jsx-a11y/interactive-supports-focus: 0 */
 import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Card, Accordion, Button } from 'react-bootstrap';
@@ -39,8 +40,8 @@ const Options2 = () => {
                 delay={500}
                 distance="30px"
               >
-                <div className="project-wrapper__text">
-                  <h3 className="project-wrapper__text-title">{title || 'Project Title'}</h3>
+                <div className="options-wrapper__text">
+                  <h1 className="options-wrapper__text-title">{title || 'Project Title'}</h1>
                   <div>
                     <p>
                       {info ||
@@ -61,24 +62,19 @@ const Options2 = () => {
                           </Card>
                         </Accordion>
                       )}
-
-                      {/* <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button"> */}
-                      {/* {url || <BiInfoCircle />} */}
-                      {/* </div> */}
-                      {/* {hover
-                        ? 'An RSVP Advocate is a fully confidential individual who can walk you through your options.'
-                        : ''} */}
                     </p>
                   </div>
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
                     className="cta-btn cta-btn--hero"
-                    href={url || '#!'}
+                    href="https://studenthealth.usc.edu/sexual-assault/"
                   >
                     Link
                   </a>
                 </div>
+                <br />
+                <br />
               </Fade>
             );
           })}

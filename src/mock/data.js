@@ -95,56 +95,45 @@ export const projectsData = [
     id: nanoid(),
     img: 'project.jpg',
     title: 'Santa Monica Rape Treatment Center',
-    info:
-      'Free sensitive medical treatment, preventive health care and counseling available 24/7.  ',
-    info2:
-      'A sexual assault survivor has the option of a Sexual Assault Forensic Exam (SAFE) (commonly referred to as “rape exam”) without filing a police report. UCPD will provide free and confidential transportation to the RTC.',
+    info: '1250 16th St, Santa Monica, CA 90404.  ',
+    info2: '(424) 259-7208',
     url: 'https://www.uclahealth.org/rtc/',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'LAC-DHS in partnership with USC',
-    info: '(Eastern Los Angeles)',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
     title: 'Long Beach Community Hospital',
-    info: '(Long Beach)',
-    info2: '',
-    url: '',
+    info: '2801 Atlantic Avenue Long Beach, CA 90806',
+    info2: '(562) 933-2000',
+    url: 'https://www.memorialcare.org/locations/long-beach-medical-center',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
     title: 'San Gabriel Valley Hospital',
-    info: '(San Gabriel)',
-    info2: '',
-    url: '',
+    info: '438 West Las Tunas Drive, San Gabriel, CA 91776',
+    info2: '(626) 289-5454',
+    url: 'https://www.sgvmc.com/',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
     title: 'Presbyterian Community Hospital',
-    info: '(Whittier)',
-    info2: '',
-    url: '',
+    info: '12401 Washington Blvd Whittier, CA 90602',
+    info2: '(562)-698-0811',
+    url: 'https://www.pihhealth.org/',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Little Company of Mary',
-    info: '(Torrance)',
-    info2: '',
-    url: '',
+    title: 'Providence Little Company of Mary Medical Center - Torrance',
+    info: '4101 Torrance Blvd, Torrance, CA 90503',
+    info2: '(310) 540-7676',
+    url: 'https://www.providence.org/locations/PLCM-torrance#llaid=5909',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
   },
 ];

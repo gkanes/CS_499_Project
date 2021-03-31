@@ -36,12 +36,14 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Rape Kit Resources" />
-          <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
-            <BiInfoCircle />
-          </div>
-          {hover
-            ? 'An RSVP Advocate is a fully confidential individual who can walk you through your options.'
-            : ''}
+          <h1 className="hero-title">
+            <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
+              <BiInfoCircle />
+            </div>
+            {hover
+              ? 'An RSVP Advocate is a fully confidential individual who can walk you through your options.'
+              : ''}
+          </h1>
           {projects.map((project) => {
             const { title, info, info2, url } = project;
 
