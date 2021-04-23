@@ -15,8 +15,7 @@ const Contact = () => {
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="contact-wrapper">
             <p className="contact-wrapper__text">
-              {cta ||
-                'Please feel free to contact us at any time with any questions or concerns at shadenaw@usc.edu or gkanes@usc.edu'}
+              {cta || 'We are two USC students who are looking to help survivors on campus.'}
             </p>
             {/* <a
               target="_blank"
