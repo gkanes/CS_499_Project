@@ -62,7 +62,7 @@ const Header = () => {
             <Nav.Link href="/" />
             {/* </span> */}
             {/* <span className="cta-btn cta-btn--hero"> */}
-            <Link to="options" smooth duration={1000}>
+            <Link to="options2" smooth duration={1000}>
               Options
             </Link>
             {/* </span> */}
