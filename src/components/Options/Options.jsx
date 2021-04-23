@@ -35,18 +35,29 @@ const Header = () => {
     }
   }, []);
 
+  let hoverButton;
+  if (hover) {
+    hoverButton = (
+      <div className="hoverExplanation">
+        An RSVP Advocate is a fully confidential individual who can walk you through your options.
+      </div>
+    );
+  } else {
+    hoverButton = <div />;
+  }
+
   return (
     <section id="options">
       <Container>
         <div className="options-wrapper">
           <Title title="Rape Kit Resources" />
           <h1 className="options-wrapper__text-title">
-            <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
-              <BiInfoCircle />
+            <div className="iRow">
+              <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
+                <BiInfoCircle />
+              </div>
+              {hoverButton}
             </div>
-            {hover
-              ? 'An RSVP Advocate is a fully confidential individual who can walk you through your options.'
-              : ''}
           </h1>
           {projects.map((project) => {
             const { title, info, info2, url } = project;

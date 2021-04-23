@@ -74,4 +74,19 @@
       }
     }
   }
+
+  .iRow {
+    display: flex;
+
+    text-align: 'center';
+    justifycontent: 'center';
+    alignitems: 'center';
+    flex-direction: row;
+  }
+  .hoverExplanation {
+    padding: 1.5rem $default-font-size;
+    font-size: 1.7rem;
+    background-color: #00cc99;
+    color: $white-color;
+  }
 }

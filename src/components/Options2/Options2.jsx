@@ -50,14 +50,15 @@ const Options2 = () => {
                     <p className="mb-4">
                       {url || (
                         <Accordion>
-                          <Card>
-                            <Card.Header>
+                          <Card className="dropdown-info">
+                            <Card.Header className="dropdown-info">
                               <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                                {info2}
+                                <div className="dropdown-info">{info2}</div>
+                                {/* {info2} */}
                               </Accordion.Toggle>
                             </Card.Header>
                             <Accordion.Collapse eventKey="0">
-                              <Card.Body>{info3}</Card.Body>
+                              <Card.Body className="dropdown-info">{info3}</Card.Body>
                             </Accordion.Collapse>
                           </Card>
                         </Accordion>

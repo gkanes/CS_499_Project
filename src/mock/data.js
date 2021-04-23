@@ -12,7 +12,7 @@ export const headData = {
 export const heroData = {
   title: 'Hi! I am your',
   name: 'online advocate.',
-  subtitle: 'Are you a sexual assault survivor?',
+  subtitle: 'Have you been impacted by gender- or power-based harm?',
   cta: 'Yes',
   cta2: 'No',
 };
@@ -22,7 +22,7 @@ export const hero2Data = {
   title: 'First, would you like to call the ',
   name: '24/7 sexual assault hotline?',
   subtitle: 'Please call (213) 740-9355 (WELL) for immediate assistance.',
-  cta: 'Continue',
+  cta: 'I would like to learn about my other options',
 };
 
 // HERO3 DATA
@@ -72,10 +72,10 @@ export const optionsData = {
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
   paragraphOne:
-    'We are here to help. Whether you are a recent survivor, a friend of a survivor, or a survivor looking for extra guidance, we hope we can provide you with resources to assist you along the way.',
-  paragraphTwo: '',
+    "Hello, we are Glory Kanes and Shaden Awad, two seniors at USC studying computer science. Over the past years, we have felt there is a gap in the post-assault process for sexual assault survivors on USC's campus. It's difficult for survivors to understand what options they have after assault, see a full list of resources, and trust the school system. ",
+  paragraphTwo:
+    "\n\nFor the past couple of months, we've worked to create a website to collect resources that USC provides for sexual assault survivors into a personalized virtual assistant. We have worked with RSVP, Title IX, and the Santa Monica Rape Crisis Center. However, we are fully autonomous and do not associate with USC or any organization.",
   paragraphThree: '',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
@@ -85,7 +85,8 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'If you would like to speak to an RSVP advocate to help you through the process',
+    title:
+      'If you would like to speak to an RSVP advocate to help you through the rape kit process',
     info: 'Please login to your MySHR portal and book an advocate appointment through ',
     info2: 'Want to speak to someone now? Call (213) 740-9355 (WELL)',
     url: '',
@@ -167,11 +168,12 @@ export const options2Data = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Filing a Report with Title IX',
+    title: 'USC’s Office for Equity, Equal Opportunity, and Title IX',
     info:
-      'The newly-created Office for Equity, Equal Opportunity, and Title IX (EEO-TIX) combines resources to centralize the University’s reporting, investigation, and resolution procedures.\n\n',
-    info2: 'What happens when I file a report with Title IX?',
-    info3: 'Nothing! If you file a report and decide not to proceed later on that is fine.',
+      'USC’s Office for Equity, Equal Opportunity, and Title IX (EEO-TIX) offers supportive measures (which are available even without filing a formal complaint) and alternative and formal resolution options in response to reports of protected class discrimination, harassment, and retaliation.\n\n',
+    info2: 'What happens if I report to EEO-TIX?',
+    info3:
+      'EEO-TIX will email you information about resources and resolution options and offer to meet with you. Whenever possible, EEO-TIX will honor the reporting party’s preference as to what they would like to see happen.',
     url: false,
     repo: 'https://eeotix.usc.edu/', // if no repo, the button will not show up
   },

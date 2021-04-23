@@ -12,13 +12,23 @@ const Header = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [hover, setHover] = useState(false);
-  const onHover = () => {
-    setHover(true);
+  const [onHoverSpeaking, setOnHoverSpeaking] = useState(false);
+  const [onHoverConfidential, setOnHoverConfidential] = useState(false);
+
+  const onHoverSpeakingFunc = () => {
+    setOnHoverSpeaking(true);
   };
 
-  const onLeave = () => {
-    setHover(false);
+  const onLeaveSpeakingFunc = () => {
+    setOnHoverSpeaking(false);
+  };
+
+  const onHoverConfidentialFunc = () => {
+    setOnHoverConfidential(true);
+  };
+
+  const onLeaveConfidentialFunc = () => {
+    setOnHoverConfidential(false);
   };
 
   useEffect(() => {
@@ -31,6 +41,30 @@ const Header = () => {
     }
   }, []);
 
+  let hoverButtonSpeaking;
+  if (onHoverSpeaking) {
+    hoverButtonSpeaking = (
+      <div className="hoverExplanation">
+        Who will I be speaking to? An RSVP Advocate, a fully confidential individual who can walk
+        you through your options.
+      </div>
+    );
+  } else {
+    hoverButtonSpeaking = <div />;
+  }
+
+  let hoverButtonConfidential;
+  if (onHoverConfidential) {
+    hoverButtonConfidential = (
+      <div className="hoverExplanation">
+        Calling a hotline is confidential, meaning what you share will stay between you and the
+        hotline employee.
+      </div>
+    );
+  } else {
+    hoverButtonConfidential = <div />;
+  }
+
   return (
     <section id="hero2" className="jumbotron">
       <Container>
@@ -40,12 +74,26 @@ const Header = () => {
             <span className="text-color-main">{name || 'online advocate'}</span>
             <br />
             {subtitle || 'hi'}
-            <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
-              <BiInfoCircle />
+            <div className="iRow">
+              <div
+                onMouseEnter={onHoverSpeakingFunc}
+                onMouseLeave={onLeaveSpeakingFunc}
+                role="button"
+              >
+                <BiInfoCircle />
+              </div>
+              {hoverButtonSpeaking}
             </div>
-            {hover
-              ? 'Who will I be speaking to? An RSVP Advocate, a fully confidential individual who can walk you through your options.'
-              : ''}
+            <div className="iRow">
+              <div
+                onMouseEnter={onHoverConfidentialFunc}
+                onMouseLeave={onLeaveConfidentialFunc}
+                role="button"
+              >
+                <BiInfoCircle />
+              </div>
+              {hoverButtonConfidential}
+            </div>
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
