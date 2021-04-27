@@ -86,7 +86,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'project.jpg',
     title:
-      'If you would like to speak to an RSVP advocate to help you through the rape kit process',
+      'If you would like to speak to an RSVP advocate to help you through the rape kit process. An RSVP Advocate is a fully confidential individual who can walk you through your options.',
     info: 'Please login to your MySHR portal and book an advocate appointment through ',
     info2: 'Want to speak to someone now? Call (213) 740-9355 (WELL)',
     url: '',
@@ -156,7 +156,19 @@ export const options2Data = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: 'Mental Health Resources',
+    title: 'Mental Health Resources at USC',
+    info:
+      "There are a variety of mental health resources available to you at USC. Visit Engemann's website below to find them.",
+    info2: true,
+    info3: 'Nothing! If you file a report and decide not to proceed later on that is fine.',
+
+    url: true,
+    repo: 'https://studenthealth.usc.edu/', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'project.jpg',
+    title: 'Mental Health Resources off Campus',
     info:
       "There are a variety of mental health resources available to you at USC. Visit Engemann's website below to find them.",
     info2: true,

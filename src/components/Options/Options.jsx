@@ -8,6 +8,7 @@ import { Container } from 'react-bootstrap';
 import { BiInfoCircle } from 'react-icons/bi';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
+
 // import ProjectImg from '../Image/ProjectImg';
 
 const Header = () => {
@@ -17,6 +18,7 @@ const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [hover, setHover] = useState(false);
+
   const onHover = () => {
     setHover(true);
   };
@@ -51,6 +53,13 @@ const Header = () => {
       <Container>
         <div className="options-wrapper">
           <Title title="Rape Kit Resources" />
+          <div className="hoverExplanation">
+            Getting a rape kit entails a doctor or nurse conducting a four- to six-hour examination,
+            and will preserve this evidence in a sexual assault evidence collection kit, commonly
+            referred to as a rape kit. If a survivor chooses to report the rape to the police, the
+            evidence in the rape kit can be one a very powerful tool to bring a perpetrator to
+            justice.
+          </div>
           <h1 className="options-wrapper__text-title">
             <div className="iRow">
               <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
@@ -59,6 +68,7 @@ const Header = () => {
               {hoverButton}
             </div>
           </h1>
+
           {projects.map((project) => {
             const { title, info, info2, url } = project;
 

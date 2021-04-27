@@ -47,6 +47,13 @@ const Projects = () => {
       <Container>
         <div className="project-wrapper">
           <Title title="Rape Kit Resources" />
+          <div className="hoverExplanation">
+            Getting a rape kit entails a doctor or nurse conducting a four- to six-hour examination,
+            and will preserve this evidence in a sexual assault evidence collection kit, commonly
+            referred to as a rape kit. If a survivor chooses to report the rape to the police, the
+            evidence in the rape kit can be one a very powerful tool to bring a perpetrator to
+            justice.
+          </div>
           <h1 className="hero-title">
             <div className="iRow">
               <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
