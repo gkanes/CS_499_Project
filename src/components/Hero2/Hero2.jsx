@@ -46,7 +46,8 @@ const Header = () => {
     hoverButtonSpeaking = (
       <div className="hoverExplanation">
         Who will I be speaking to? An RSVP Advocate, a fully confidential individual who can walk
-        you through your options.
+        you through your options. They can help you through what happened, provide curated local
+        resources, information about laws in the community and any other basic and medical concerns.
       </div>
     );
   } else {

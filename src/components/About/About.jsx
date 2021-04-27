@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 import Title from '../Title/Title';
 import PortfolioContext from '../../context/context';
 
@@ -24,6 +25,20 @@ const About = () => {
   return (
     <section id="about">
       <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Nav className="mr-auto">
+          {/* <span className="cta-btn cta-btn--hero">  */}
+          <Link to="hero" smooth duration={1000}>
+            Home
+          </Link>
+          <Nav.Link href="/" />
+          {/* </span> */}
+          {/* <span className="cta-btn cta-btn--hero"> */}
+          <Link to="options2" smooth duration={1000}>
+            Options
+          </Link>
+          {/* </span> */}
+        </Nav>
         <Title title="About" />
         <Row className="about-wrapper">
           {/* <Col md={6} sm={12}>

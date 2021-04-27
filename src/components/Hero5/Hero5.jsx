@@ -3,7 +3,6 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
-import { BiInfoCircle } from 'react-icons/bi';
 import PortfolioContext from '../../context/context';
 
 const Header = () => {
@@ -12,14 +11,14 @@ const Header = () => {
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [hover, setHover] = useState(false);
-  const onHover = () => {
-    setHover(true);
-  };
+  // const [hover, setHover] = useState(false);
+  // const onHover = () => {
+  //   setHover(true);
+  // };
 
-  const onLeave = () => {
-    setHover(false);
-  };
+  // const onLeave = () => {
+  //   setHover(false);
+  // };
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -31,19 +30,19 @@ const Header = () => {
     }
   }, []);
 
-  let hoverButton;
-  if (hover) {
-    hoverButton = (
-      <div className="hoverExplanation">
-        Getting a rape kit entails a doctor or nurse conducting a four- to six-hour examination, and
-        will preserve this evidence in a sexual assault evidence collection kit, commonly referred
-        to as a rape kit. If a survivor chooses to report the rape to the police, the evidence in
-        the rape kit can be one a very powerful tool to bring a perpetrator to justice.
-      </div>
-    );
-  } else {
-    hoverButton = <div />;
-  }
+  // let hoverButton;
+  // if (hover) {
+  //   hoverButton = (
+  //     <div className="hoverExplanation">
+  //       Getting a rape kit entails a doctor or nurse conducting a four- to six-hour examination, and
+  //       will preserve this evidence in a sexual assault evidence collection kit, commonly referred
+  //       to as a rape kit. If a survivor chooses to report the rape to the police, the evidence in
+  //       the rape kit can be one a very powerful tool to bring a perpetrator to justice.
+  //     </div>
+  //   );
+  // } else {
+  //   hoverButton = <div />;
+  // }
 
   return (
     <section id="hero5" className="jumbotron">
@@ -51,12 +50,19 @@ const Header = () => {
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
             {title || 'I am your'}
-            <div className="iRow">
+            <div className="hoverExplanation">
+              Getting a rape kit entails a doctor or nurse conducting a four- to six-hour
+              examination, and will preserve this evidence in a sexual assault evidence collection
+              kit, commonly referred to as a rape kit. If a survivor chooses to report the rape to
+              the police, the evidence in the rape kit can be one a very powerful tool to bring a
+              perpetrator to justice.
+            </div>
+            {/* <div className="iRow">
               <div onMouseEnter={onHover} onMouseLeave={onLeave} role="button">
                 <BiInfoCircle />
               </div>
               {hoverButton}
-            </div>
+            </div> */}
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

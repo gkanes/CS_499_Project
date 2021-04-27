@@ -21,7 +21,8 @@ export const heroData = {
 export const hero2Data = {
   title: 'First, would you like to call the ',
   name: '24/7 sexual assault hotline?',
-  subtitle: 'Please call (213) 740-9355 (WELL) for immediate assistance.',
+  subtitle:
+    'Please call (213) 740-9355 (WELL) if you are in an emergency or need immediate assistance.',
   cta: 'I would like to learn about my other options',
 };
 
@@ -36,7 +37,7 @@ export const hero3Data = {
 
 // HERO4 DATA
 export const hero4Data = {
-  title: 'Has the assault happened in the past',
+  title: 'Has a sexual assault happened in the past',
   name: '72 hours?',
   subtitle: 'would you like to learn more about your options?',
   cta: 'Yes',
