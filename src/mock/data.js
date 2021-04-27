@@ -86,8 +86,8 @@ export const projectsData = [
     id: nanoid(),
     img: 'project.jpg',
     title:
-      'If you would like to speak to an RSVP advocate to help you through the rape kit process. An RSVP Advocate is a fully confidential individual who can walk you through your options.',
-    info: 'Please login to your MySHR portal and book an advocate appointment through ',
+      'If you would like to speak to an RSVP advocate to help you through the rape kit process',
+    info: 'Please login to your MySHR portal and book an advocate appointment.',
     info2: 'Want to speak to someone now? Call (213) 740-9355 (WELL)',
     url: '',
     repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up

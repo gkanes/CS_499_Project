@@ -1,6 +1,6 @@
 /* eslint react/no-unescaped-entities: 0 */
 import React, { useContext, useState, useEffect } from 'react';
-import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import { BiInfoCircle } from 'react-icons/bi';
@@ -52,20 +52,21 @@ const Header = () => {
   return (
     <section id="hero" className="jumbotron">
       <Container>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Nav className="mr-auto">
-          <Nav.Link href="#home">Home</Nav.Link>
-          <Nav.Link href="#link">Link</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-          </NavDropdown>
-        </Nav>
-
         <Fade>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Nav className="mr-auto">
+            {/* <span className="cta-btn cta-btn--hero">  */}
+            <Link to="about" smooth duration={1000}>
+              About
+            </Link>
+            <Nav.Link href="/" />
+            {/* </span> */}
+            {/* <span className="cta-btn cta-btn--hero"> */}
+            <Link to="options2" smooth duration={1000}>
+              Options
+            </Link>
+            {/* </span> */}
+          </Nav>
           <h1 className="hero-title">
             {title || 'I am your'}{' '}
             <span className="text-color-main">{name || 'online advocate'}</span>
